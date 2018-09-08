@@ -1,162 +1,66 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "funciones.h"
+#define TAM 5
 
-float suma(float, float);
-float resta(float, float);
-float division(float, float);
-float multiplicacion(float,float);
+void mostrarvector(int x[], int);
 
-int main(void)
+int main()
+
 {
-    char seguir='s';
-    int opcion=0;
-    float numero_uno;
-    float numero_dos;
-    float resultado;
-    float i, factor=1;
+    int vec[TAM];
+    char respuesta;
+    int numero;
+    int indice;
 
+    for (int i=0; i<TAM ; i++){
+         vec[i]=0;
 
+        }
 
+    do{
+         printf("ingrese un numero: ");
+         scanf("%d", &numero);
 
+         printf("ingrese donde desea guardar numero en array: ");
+         scanf("%d", &indice);
 
-    while(seguir=='s')
+         vec[indice] = numero;
+
+        printf("Desea continuar? ingrese s o n: ");
+        fflush(stdin);
+        scanf("%c", &respuesta);
+      } while(respuesta=='s');
+
+    buscavector()
+      mostrarvector(vec,TAM);
+
+    return 0;
+}
+
+void mostrarvector(int x[], int tam)
+{
+    for (int i=0; i< tam; i++){
+
+        printf("%d ", x[i]);
+
+    }
+     printf("\n \n");
+}
+
+void buscavector( int vec[], int tam, int valor)
+{
+    int indece = -1;
+
+    for (int i=0; i<tam ; i++)
     {
-        printf("\n1- Ingresar 1er operando (A=%.2f)\n", numero_uno);
-        printf("2- Ingresar 2do operando (B=%.2f)\n", numero_dos);
-        printf("3- Calcular la suma (A+B)\n");
-        printf("4- Calcular la resta (A-B)\n");
-        printf("5- Calcular la division (A/B)\n");
-        printf("6- Calcular la multiplicacion (A*B)\n");
-        printf("7- Calcular el factorial (A!)\n");
-        printf("8- Calcular todas las operaciones\n");
-        printf("9- Salir\n");
-
-        printf("\nSeleccione una opcion: ");
-        scanf("%d",&opcion);
-
-        switch(opcion)
+        if( vec[i] == valor)
         {
-            case 1: printf("\nIngrese un numero: ");
-                    fflush(stdin);
-                    scanf("%f", &numero_uno);
-                break;
-
-            case 2: printf("\nIngrese un numero: ");
-                    fflush(stdin);
-                    scanf("%f", &numero_dos);
-                break;
-
-            case 3: printf("\nLa suma total es: %.2f\n\n", suma(numero_uno,numero_dos));
-                    getch();
-
-                break;
-
-            case 4: printf("\nLa resta total es: %.2f\n\n", resta(numero_uno,numero_dos));
-                    getch();
-                break;
-
-            case 5: while(numero_dos < 0  || numero_dos==0 )
-                    {
-                       printf("\nnumero es no valido, vuelva a intentar: ");
-                       scanf("%f", &numero_dos);
-
-                    }
-                    printf("\nLa division total es: %.2f\n\n", division(numero_uno,numero_dos));
-                    getch();
-                break;
-
-            case 6: printf("\nLa multiplicacion total es: %.2f\n\n", multiplicacion(numero_uno, numero_dos));
-                    getch();
-                break;
-
-            case 7: while (numero_uno<0)
-                {
-                    printf("\nIngrese un numero entero:\n ");
-                    scanf("%f", &numero_uno);
-                }
-                        for(i=1;i<=numero_uno;i++)
-                        {
-                            factor= factor*i;
-
-                        }
-                    printf("\nEl factor de:%.2f es %.2f\n",numero_uno, factor);
-                    getch();
-                break;
-
-            case 8: printf("\nLa suma total es: %.2f\n\n", suma(numero_uno,numero_dos));
-
-                    printf("\nLa resta total es: %.2f\n\n", resta(numero_uno,numero_dos));
-
-                    printf("\nLa division total es: %.2f\n\n", division(numero_uno, numero_dos));
-
-                    printf("\nLa multiplicacion total es: %.2f\n\n", multiplicacion(numero_uno, numero_dos));
-
-
-                    while (numero_uno < 0)
-                {
-                    printf("\nIngrese un numero entero:\n ");
-                    scanf("%f", &numero_uno);
-                }
-                        for(i=1;i<=numero_uno;i++)
-                        {
-                            factor= factor*i;
-
-                        }
-                    printf("\nEl factor de:%.2f es %.2f\n",numero_uno, factor);
-
-
-                break;
-
-            case 9:
-                seguir = 'n';
-                break;
+            indice = i;
+            break;
         }
 
     }
-    return 0;
-}
-float suma(float numero_uno, float numero_dos)
-    {   float retorno;
-        retorno =numero_uno+numero_dos;
-        return retorno;
-    }
-
-float resta(float numero_uno, float numero_dos)
-{
-    float retorno;
-    retorno= numero_uno-numero_dos;
-    return retorno;
-
-}
-float division(float numero_uno, float numero_dos)
-{
-     while(numero_dos < 0  || numero_dos==0 )
-                    {
-                       printf("\nnumero es no valido, vuelva a intentar: ");
-                       scanf("%f", &numero_dos);
-
-                    }
-    float retorno;
-    retorno= numero_uno/numero_dos;
-    return retorno;
-
-}
-float multiplicacion(float numero_uno, float numero_dos)
-{
-    float retorno;
-    retorno= numero_uno*numero_dos;
-    return retorno;
-
-}
-
-float factoreo(float numero_uno)
-{
-    float retorno;
-    retorno=numero_uno;
-    return retorno;
 
 
 }
-
 
