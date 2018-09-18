@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1537228714 source:d:\mis documentos\clase 8\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1537230988 source:d:\mis documentos\clase 8\libreria.c
+
