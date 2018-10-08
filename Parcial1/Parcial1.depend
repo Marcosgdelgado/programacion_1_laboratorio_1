@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1538855838 source:c:\users\marcos\desktop\parcial1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"UTN.H"
+
+1538855794 c:\users\marcos\desktop\parcial1\utn.h
+
+1538855866 source:c:\users\marcos\desktop\parcial1\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"UTN.H"
+
