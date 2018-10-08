@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1538863266 source:c:\users\marcos\desktop\parcial\abmcliente.c
+	"AbmCliente.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1538863168 c:\users\marcos\desktop\parcial\abmcliente.h
+
+1538863647 source:c:\users\marcos\desktop\parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"AbmCliente.h"
+
