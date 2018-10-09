@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1539043254 source:d:\parcial123\prueba\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1539043834 source:d:\parcial123\delgado.marcos.1ºg\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Delgado.h"
+
+1539043641 source:d:\parcial123\delgado.marcos.1ºg\delgado.c
+	"Delgado.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1539043899 d:\parcial123\delgado.marcos.1ºg\delgado.h
+
