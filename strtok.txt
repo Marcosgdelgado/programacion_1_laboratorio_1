@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+   char cad1[] = "Esto,es,una,cadena,para,parsear,con,la,,funcion,strtok";
+   char cad2[] = ",\n";
+   char* aux;
+
+   printf( "cad1= %s\n\n", cad1 );
+
+   aux = strtok( cad1, cad2 );
+   printf( "%s\n", aux );
+   while((aux = strtok( NULL, cad2 )) != NULL ){
+     printf( "%s\n", aux );
+   }
+
+   printf( "cad1=%s\n\n", cad1 );
+
+
+   return 0;
+}
+
