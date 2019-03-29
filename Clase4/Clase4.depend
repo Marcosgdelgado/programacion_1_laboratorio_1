@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1553820678 source:d:\sofia cf\clase4\main.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+
+1553821472 source:d:\sofia cf\clase4\utn.c
+	<stdio.h>
+	<stdlib.h>
+
+1553820710 d:\sofia cf\clase4\utn.h
+
