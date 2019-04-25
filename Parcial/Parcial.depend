@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1556153458 source:c:\users\alumno\desktop\parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"Pantalla.h"
+	"Publicidad.h"
+	"Utn_String.h"
+
+1556153687 c:\users\alumno\desktop\parcial\pantalla.h
+
+1556145496 c:\users\alumno\desktop\parcial\publicidad.h
+
+1556153875 source:c:\users\alumno\desktop\parcial\pantalla.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"Pantalla.h"
+	"Publicidad.h"
+	"Utn_String.h"
+
+1556144857 source:c:\users\alumno\desktop\parcial\publicidad.c
+
+1556145548 source:c:\users\alumno\desktop\parcial\funciones_pantalla.c
+
+1556145591 source:c:\users\alumno\desktop\parcial\funciones_publicidad.c
+
+1556149458 c:\users\alumno\desktop\parcial\utn_string.h
+
+1556149799 source:c:\users\alumno\desktop\parcial\utn_string.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"Pantalla.h"
+	"Publicidad.h"
+	"Utn_String.h"
+
