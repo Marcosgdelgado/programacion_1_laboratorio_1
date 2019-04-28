@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1555791446 source:c:\users\marcos\desktop\tp2---dos\herramientas.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Herramientas.h"
+
+1555791446 c:\users\marcos\desktop\tp2---dos\herramientas.h
+
+1555800114 source:c:\users\marcos\desktop\tp2---dos\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Herramientas.h"
+	"Empleados.h"
+
+1555800359 c:\users\marcos\desktop\tp2---dos\empleados.h
+
+1555803198 source:c:\users\marcos\desktop\tp2---dos\empleados.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	"Empleados.h"
+
