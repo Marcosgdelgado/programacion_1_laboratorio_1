@@ -109,6 +109,7 @@ int utn_getStringAvanzado(char* input,char* msg,char* msgErr,int MAXEMP, int rei
             printf("%s",msgErr);
         }
     }while(reintentos>=0);
+    return 0;
 }
 
 
