@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1558036700 source:c:\users\marcos\desktop\parcial2.0\parcial 2.1\autor.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"utn.h"
+	"autor.h"
+
+1558031386 c:\users\marcos\desktop\parcial2.0\parcial 2.1\utn.h
+
+1558033454 c:\users\marcos\desktop\parcial2.0\parcial 2.1\autor.h
+
+1558034973 source:c:\users\marcos\desktop\parcial2.0\parcial 2.1\libro.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"libro.h"
+	"autor.h"
+
+1558034801 c:\users\marcos\desktop\parcial2.0\parcial 2.1\libro.h
+	"autor.h"
+
+1558031387 source:c:\users\marcos\desktop\parcial2.0\parcial 2.1\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1558036859 source:c:\users\marcos\desktop\parcial2.0\parcial 2.1\main.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"autor.h"
+	"libro.h"
+
