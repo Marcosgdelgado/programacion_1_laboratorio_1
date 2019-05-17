@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1558053608 source:c:\users\alumno\desktop\marcos delgado\parcial2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"orquesta.h"
+	"utn.h"
+	"musico.h"
+	"instrumento.h"
+
+1558054294 c:\users\alumno\desktop\marcos delgado\parcial2\orquesta.h
+
+1558045924 c:\users\alumno\desktop\marcos delgado\parcial2\utn.h
+
+1558052010 source:c:\users\alumno\desktop\marcos delgado\parcial2\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1558050955 source:c:\users\alumno\desktop\marcos delgado\parcial2\orquesta.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"utn.h"
+	"orquesta.h"
+
+1558050955 source:c:\users\alumno\desktop\marcos delgado\parcial2\musico.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"musico.h"
+
+1558054324 c:\users\alumno\desktop\marcos delgado\parcial2\musico.h
+
+1558054411 source:c:\users\alumno\desktop\marcos delgado\parcial2\instrumento.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"instrumento.h"
+
+1558054350 c:\users\alumno\desktop\marcos delgado\parcial2\instrumento.h
+
