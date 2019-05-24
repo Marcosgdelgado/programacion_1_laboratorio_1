@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1558659484 source:c:\users\alumno\desktop\memorias dinamicas\memorias\personas.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"personas.h"
+
+1558653389 c:\users\alumno\desktop\memorias dinamicas\memorias\utn.h
+
+1558659039 c:\users\alumno\desktop\memorias dinamicas\memorias\personas.h
+
+1558653389 source:c:\users\alumno\desktop\memorias dinamicas\memorias\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1558660342 source:c:\users\alumno\desktop\memorias dinamicas\memorias\main.c
+	<stdio.h>
+	<stdlib.h>
+	"personas.h"
+	"utn.h"
+
