@@ -1,0 +1,113 @@
+# depslib dependency file v1.0
+1558408756 source:c:\users\marcos\desktop\parcial final\parcial\instrumento.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"instrumento.h"
+
+1558305502 c:\users\marcos\desktop\parcial final\parcial\utn.h
+
+1558398897 c:\users\marcos\desktop\parcial final\parcial\instrumento.h
+
+1558541748 source:c:\users\marcos\desktop\parcial final\parcial\musico.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"musico.h"
+	"orquesta.h"
+	"instrumento.h"
+
+1558485075 c:\users\marcos\desktop\parcial final\parcial\musico.h
+	"orquesta.h"
+	"instrumento.h"
+
+1558395587 source:c:\users\marcos\desktop\parcial final\parcial\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1558483601 source:c:\users\marcos\desktop\parcial final\parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"orquesta.h"
+	"utn.h"
+	"musico.h"
+	"instrumento.h"
+
+1558398897 c:\users\marcos\desktop\parcial final\parcial\orquesta.h
+
+1558408756 source:c:\users\marcos\desktop\parcial final\parcial\orquesta.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"utn.h"
+	"orquesta.h"
+
+1558895763 source:c:\users\marcos\desktop\parcial 3.0\parcial final\parcial\instrumento.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"instrumento.h"
+
+1558885645 c:\users\marcos\desktop\parcial 3.0\parcial final\parcial\utn.h
+
+1558895682 c:\users\marcos\desktop\parcial 3.0\parcial final\parcial\instrumento.h
+
+1558911509 source:c:\users\marcos\desktop\parcial 3.0\parcial final\parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"orquesta.h"
+	"utn.h"
+	"musico.h"
+	"instrumento.h"
+	"informes.h"
+
+1558899424 c:\users\marcos\desktop\parcial 3.0\parcial final\parcial\orquesta.h
+
+1558895683 c:\users\marcos\desktop\parcial 3.0\parcial final\parcial\musico.h
+	"orquesta.h"
+	"instrumento.h"
+
+1558906963 source:c:\users\marcos\desktop\parcial 3.0\parcial final\parcial\musico.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"musico.h"
+	"orquesta.h"
+	"instrumento.h"
+
+1558901990 source:c:\users\marcos\desktop\parcial 3.0\parcial final\parcial\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1558912138 source:c:\users\marcos\desktop\parcial 3.0\parcial final\parcial\informes.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"musico.h"
+	"orquesta.h"
+	"instrumento.h"
+
+1558911509 c:\users\marcos\desktop\parcial 3.0\parcial final\parcial\informes.h
+
+1558899362 source:c:\users\marcos\desktop\parcial 3.0\parcial final\parcial\orquesta.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	"utn.h"
+	"orquesta.h"
+
