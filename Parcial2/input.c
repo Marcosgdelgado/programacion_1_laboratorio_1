@@ -3,12 +3,13 @@
 #include <string.h>
 #include <ctype.h>
 #include "input.h"
+#include "LinkedList.h"
 
-void myPause(void)
-{
-    printf("...");
-    getchar();
-}
+//void myPause(void)
+//{
+//    printf("...");
+//    getchar();
+//}
 
 void clrscr(void)
 {
@@ -255,4 +256,83 @@ int utn_getAddress( char *pResult,
         attempts--;
     }
     return ret;
+}
+int utn_getCUIT(char* msg, char* msgError, int reintentos, char* input)
+{
+    int maxSize=14; //con guiones 13 elementos
+    int minSize=11;  // sin puntos
+    int retorno=-1;
+    char bufferStr[maxSize];
+
+    if(msg!=NULL && msgError!=NULL && minSize<maxSize && reintentos>=0 && input!=NULL)
+    {
+        do
+        {
+            if(!utn_getString(msg,msgError,minSize,maxSize,&reintentos,bufferStr)) //==0 sin errores !0
+            {
+                if(isValidCUIT(bufferStr)==1)
+                {
+                    strncpy(input,bufferStr,maxSize);
+                    retorno=0;
+                    break;
+                }
+                else
+                {
+                    printf("%s 2",msgError);
+                    reintentos--;
+                }
+            }
+        }
+        while(reintentos>=0);
+    }
+    return retorno;
+}
+
+int isValidCUIT(char* stringRecibido)
+{
+    int retorno=1;  // para las funciones isValid arranco con verdadero y cambio cuando encuentro un error
+    int i;
+    int j;
+    char buffer[14];
+    strncpy(buffer,stringRecibido,14);
+
+    for(i=0;buffer[i]!='\0';i++)
+    {
+        if((buffer[i]<'0' || buffer[i]>'9') && (buffer[i]!='-')) // chequeo que solo sean numeros o -
+        {
+            retorno=0;
+            break;
+        }
+
+        if(buffer[i]=='-')  //elimino los -
+        {
+            for(j=i;buffer[j]!='\0';j++)
+            {
+                strncpy(&buffer[j],&buffer[j+1],1);
+            }
+        }
+    }
+
+    int digitos[10]={2,3,4,5,6,7,2,3,4,5};
+    int acumulado = 0;
+    int verificador;
+
+    for(i=0;i < strlen(buffer-1); i++)
+    {
+        acumulado+=buffer[i]*digitos[i];
+    }
+
+    verificador=11-(acumulado%11);
+	if(verificador == 11)
+	{
+		verificador = 0;
+	}
+
+	if(buffer[11]!=verificador)
+    {
+        retorno=0;
+    }
+
+    //if(stringRecibido[2]!='-' || stringRecibido[11]!='-' || stringRecibido[0]!='2' || stringRecibido[1]!='0' || stringRecibido[1]!='3' || stringRecibido[1]!='4' || stringRecibido[1]!='7')
+    return retorno;
 }

@@ -52,4 +52,11 @@ int utn_getAddress( char *pResult,
                     int maxChars,
                     int attempts);
 
+int utn_getCUIT(char* msg,
+                 char* msgError,
+                 int reintentos,
+                 char* input);
+
+int isValidCUIT(char* stringRecibido);
+
 #endif // UTN_H_INCLUDED

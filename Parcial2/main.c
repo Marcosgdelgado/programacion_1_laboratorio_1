@@ -4,7 +4,7 @@
 #include "parser.h"
 #include "controller.h"
 #include "input.h"
-#include "../linkedlist_cascara_v6/inc/LinkedList.h"
+#include "LinkedList.h"
 
 int main()
 {
@@ -29,26 +29,26 @@ int main()
                 if (flag == 1){
                     printf ("\n\nSolo se puede cargar una vez\n\n");
                 }else{
-                    controller_loadFromBinary("bin.dat",listaEmpleados);
+                    //controller_loadFromBinary("bin.dat",listaEmpleados);
                 }
                 flag = 1;
                 break;
             case 3:
                 if (flag == 1){
                 system("cls");
-                controller_addEmployee(listaEmpleados);
+                //controller_addEmployee(listaEmpleados);
                 }
                 break;
             case 4:
                 if (flag == 1){
                 system("cls");
-                controller_editEmployee(listaEmpleados);
+                //controller_editEmployee(listaEmpleados);
                 }
                 break;
             case 5:
                 if (flag == 1){
                 system("cls");
-                controller_removeEmployee(listaEmpleados);
+//                controller_removeEmployee(listaEmpleados);
                 }
                 break;
             case 6:
@@ -61,7 +61,7 @@ int main()
                 break;
             case 7:
                 system("cls");
-                controller_sortEmployee(listaEmpleados);
+               // controller_sortEmployee(listaEmpleados);
                 break;
             case 8:
                 system("cls");

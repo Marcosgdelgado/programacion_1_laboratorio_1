@@ -31,10 +31,6 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="../linkedlist_cascara_v6/inc/LinkedList.h" />
-		<Unit filename="../linkedlist_cascara_v6/src/LinkedList.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="Controller.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -43,6 +39,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Employee.h" />
+		<Unit filename="LinkedList.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="LinkedList.h" />
 		<Unit filename="input.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -3,6 +3,7 @@
 #include <string.h>
 #include "input.h"
 #include "Employee.h"
+#include "LinkedList.h"
 
 static int lastId=0;
 
@@ -72,19 +73,7 @@ int entregas_delete(Entregas* this)
     return ret;
 }
 
-int entregas_compareId(void* pElementA,void* pElementB)
-{
-    int ret = 0;
-    if(((Entregas*)pElementA)->id > ((Entregas*)pElementB)->id)
-    {
-        ret = 1;
-    }
-    if(((Entregas*)pElementA)->id < ((Entregas*)pElementB)->id)
-    {
-        ret = -1;
-    }
-    return ret;
-}
+
 
 int entregas_setTipo(Entregas* this,char* tipo)
 {
@@ -108,29 +97,16 @@ int entregas_getTipo(Entregas* this,char* tipo)
     return ret;
 }
 
-int entregas_compareTipo(void* pElementA,void* pElementB)
-{
-    int ret = 0;
-    if(strcmp(((Entregas*)pElementA)->tipo,((Entregas*)pElementB)->tipo)>0)
-    {
-        ret = 1;
-    }
-    if(strcmp(((Entregas*)pElementA)->tipo,((Entregas*)pElementB)->tipo)<0)
-    {
-        ret = -1;
-    }
-    return ret;
-}
 
-int entregas_setCantidadStr(Entregas* this,char* cantidadStr)
+int entregas_setCantidadStr(Entregas* this,char* tipoFotoStr)
 {
     int ret=-1;
     int bufferCantidad;
     if(this!=NULL)
     {
-        if(utn_isValidInt(cantidadStr))
+        if(utn_isValidInt(tipoFotoStr))
         {
-            bufferCantidad = atoi(cantidadStr);
+            bufferCantidad = atoi(tipoFotoStr);
             if(!entregas_setCantidad(this,bufferCantidad))
             {
                 ret=0;
@@ -162,29 +138,17 @@ int entregas_getCantidad(Entregas* this,int* cantidad)
     return ret;
 }
 
-int entregas_compareCantidad(void* pElementA,void* pElementB)
-{
-    int ret = 0;
-    if(((Entregas*)pElementA)->cantidad > ((Entregas*)pElementB)->cantidad)
-    {
-        ret = 1;
-    }
-    if(((Entregas*)pElementA)->cantidad < ((Entregas*)pElementB)->cantidad)
-    {
-        ret = -1;
-    }
-    return ret;
-}
 
-int entregas_setPesoStr(Entregas* this,char* pesoStr)
+
+int entregas_setPesoStr(Entregas* this,char* precioStr)
 {
     int ret=-1;
     int bufferPeso;
     if(this!=NULL)
     {
-        if(utn_isValidFloat(pesoStr))
+        if(utn_isValidFloat(precioStr))
         {
-            bufferPeso = atof(pesoStr);
+            bufferPeso = atof(precioStr);
             if(!entregas_setPeso(this,bufferPeso))
             {
                 ret=0;
@@ -194,6 +158,23 @@ int entregas_setPesoStr(Entregas* this,char* pesoStr)
     return ret;
 }
 
+//int entregas_setPeso(Entregas* this,char* precioStr)
+//{
+//    int ret=-1;
+//    int bufferCUIT;
+//    if(this!=NULL)
+//    {
+//        if(utn_(precioStr))
+//        {
+//            bufferPeso = atof(precioStr);
+//            if(!entregas_setPeso(this,bufferPeso))
+//            {
+//                ret=0;
+//            }
+//        }
+//    }
+//    return ret;
+//}
 int entregas_setPeso(Entregas* this,float peso)
 {
     int ret=-1;
@@ -216,27 +197,54 @@ int entregas_getPeso(Entregas* this,float* peso)
     return ret;
 }
 
-int entregas_comparePeso(void* pElementA,void* pElementB)
+
+int entregas_setCUITstr(Entregas* this,char* CUITstr)
 {
-    int ret = 0;
-    if(((Entregas*)pElementA)->peso > ((Entregas*)pElementB)->peso)
+    int ret=-1;
+    int bufferCUIT;
+    if(this!=NULL)
     {
-        ret = 1;
-    }
-    if(((Entregas*)pElementA)->peso < ((Entregas*)pElementB)->peso)
-    {
-        ret = -1;
+        if(isValidCUIT(CUITstr))
+        {
+            bufferCUIT = atoi(CUITstr);
+            if(!entregas_setId(this,bufferCUIT))
+            {
+                ret=0;
+            }
+        }
     }
     return ret;
 }
 
-Entregas* entregas_newParametros(char* idStr,char* tipoStr,char* cantidadStr,char* pesoStr)
+int entregas_setCUIT(Entregas* this,int cuit)
+{
+    int ret=-1;
+    if(this!=NULL && cuit>=0)
+    {
+        this->cuit=cuit;
+        ret=0;
+    }
+    return ret;
+}
+
+int entregas_getCUIT(Entregas* this,int* cuit)
+{
+    int ret=-1;
+    if(this!=NULL&&cuit!=NULL)
+    {
+        *cuit=this->cuit;
+        ret=0;
+    }
+    return ret;
+}
+
+Entregas* entregas_newParametros(char* idStr,char* fechaStr,char* tipoFotoStr,char* precioStr, char* CUITstr, char* pepito)
 {
     Entregas* aux;
     aux=entregas_new();
     if(aux!=NULL)
     {
-        if(entregas_setIdStr(aux,idStr)||entregas_setTipo(aux,tipoStr)||entregas_setCantidadStr(aux,cantidadStr)||entregas_setPesoStr(aux,pesoStr))
+        if(entregas_setIdStr(aux,idStr)||entregas_setTipo(aux,fechaStr)||entregas_setCantidadStr(aux,tipoFotoStr)||entregas_setPesoStr(aux,precioStr)||entregas_setCUITstr(aux,CUITstr))
         {
             entregas_delete(aux);
             aux=NULL;

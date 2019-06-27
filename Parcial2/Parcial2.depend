@@ -112,3 +112,62 @@
 	"input.h"
 	"../linkedlist_cascara_v6/inc/LinkedList.h"
 
+1561677798 source:c:\users\alumno\desktop\parcial2\controller.c
+	<stdio.h>
+	<stdlib.h>
+	"Employee.h"
+	"parser.h"
+	"controller.h"
+	"input.h"
+	"LinkedList.h"
+
+1561677837 c:\users\alumno\desktop\parcial2\employee.h
+
+1561681917 c:\users\alumno\desktop\parcial2\parser.h
+	"LinkedList.h"
+
+1561685253 c:\users\alumno\desktop\parcial2\controller.h
+	"LinkedList.h"
+
+1561684261 c:\users\alumno\desktop\parcial2\input.h
+
+1561677848 source:c:\users\alumno\desktop\parcial2\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"input.h"
+	"Employee.h"
+	"LinkedList.h"
+
+1561686484 source:c:\users\alumno\desktop\parcial2\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"input.h"
+	"LinkedList.h"
+
+1561685253 source:c:\users\alumno\desktop\parcial2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Employee.h"
+	"parser.h"
+	"controller.h"
+	"input.h"
+	"LinkedList.h"
+
+1561681745 c:\users\alumno\desktop\parcial2\linkedlist.h
+
+1561681917 source:c:\users\alumno\desktop\parcial2\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1561677837 source:c:\users\alumno\desktop\parcial2\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"Employee.h"
+	"LinkedList.h"
+	"parser.h"
+
