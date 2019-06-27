@@ -1,0 +1,114 @@
+# depslib dependency file v1.0
+1561592883 source:c:\users\alumno\desktop\linkedlist_cascara_v6 (2)\linkedlist_cascara_v6\src\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../inc/LinkedList.h"
+
+1561585219 c:\users\alumno\desktop\linkedlist_cascara_v6 (2)\linkedlist_cascara_v6\inc\linkedlist.h
+
+1561593563 source:c:\users\alumno\desktop\linkedlist_cascara_v6 (2)\parcial2\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Controller.h"
+	"Employee.h"
+	"../linkedlist_cascara_v6/inc/LinkedList.h"
+
+1561591504 c:\users\alumno\desktop\linkedlist_cascara_v6 (2)\parcial2\controller.h
+	"../linkedlist_cascara_v6/inc/LinkedList.h"
+
+1561593563 c:\users\alumno\desktop\linkedlist_cascara_v6 (2)\parcial2\employee.h
+
+1561592875 source:c:\users\alumno\desktop\linkedlist_cascara_v6 (2)\parcial2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Employee.h"
+	"parser.h"
+	"controller.h"
+	"input.h"
+	"../linkedlist_cascara_v6/inc/LinkedList.h"
+
+1561593333 source:c:\users\alumno\desktop\linkedlist_cascara_v6 (2)\parcial2\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"Employee.h"
+	"../linkedlist_cascara_v6/inc/LinkedList.h"
+
+1561593823 source:c:\users\alumno\desktop\linkedlist_cascara_v6 (2)\parcial2\controller.c
+	<stdio.h>
+	<stdlib.h>
+	"Employee.h"
+	"parser.h"
+	"controller.h"
+	"input.h"
+	"../linkedlist_cascara_v6/inc/LinkedList.h"
+
+1561591513 c:\users\alumno\desktop\linkedlist_cascara_v6 (2)\parcial2\parser.h
+	"../linkedlist_cascara_v6/inc/LinkedList.h"
+
+1561591707 source:c:\users\alumno\desktop\linkedlist_cascara_v6 (2)\parcial2\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"input.h"
+
+1561591722 c:\users\alumno\desktop\linkedlist_cascara_v6 (2)\parcial2\input.h
+
+1561661432 source:c:\users\marcos\desktop\linkedlist_cascara_v6 (2)\parcial2\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Controller.h"
+	"Employee.h"
+	"input.h"
+	"../linkedlist_cascara_v6/inc/LinkedList.h"
+
+1561661499 c:\users\marcos\desktop\linkedlist_cascara_v6 (2)\parcial2\controller.h
+	"../linkedlist_cascara_v6/inc/LinkedList.h"
+
+1561646638 c:\users\marcos\desktop\linkedlist_cascara_v6 (2)\linkedlist_cascara_v6\inc\linkedlist.h
+
+1561661431 c:\users\marcos\desktop\linkedlist_cascara_v6 (2)\parcial2\employee.h
+
+1561657048 source:c:\users\marcos\desktop\linkedlist_cascara_v6 (2)\parcial2\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"input.h"
+
+1561669789 c:\users\marcos\desktop\linkedlist_cascara_v6 (2)\parcial2\input.h
+
+1561657247 source:c:\users\marcos\desktop\linkedlist_cascara_v6 (2)\parcial2\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"Employee.h"
+	"../linkedlist_cascara_v6/inc/LinkedList.h"
+
+1561660493 source:c:\users\marcos\desktop\linkedlist_cascara_v6 (2)\linkedlist_cascara_v6\src\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../inc/LinkedList.h"
+
+1561663169 source:c:\users\marcos\desktop\linkedlist_cascara_v6 (2)\parcial2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Employee.h"
+	"parser.h"
+	"controller.h"
+	"input.h"
+	"../linkedlist_cascara_v6/inc/LinkedList.h"
+
+1561591514 c:\users\marcos\desktop\linkedlist_cascara_v6 (2)\parcial2\parser.h
+	"../linkedlist_cascara_v6/inc/LinkedList.h"
+
+1561669789 source:c:\users\marcos\desktop\linkedlist_cascara_v6 (2)\parcial2\controller.c
+	<stdio.h>
+	<stdlib.h>
+	"Employee.h"
+	"parser.h"
+	"controller.h"
+	"input.h"
+	"../linkedlist_cascara_v6/inc/LinkedList.h"
+
